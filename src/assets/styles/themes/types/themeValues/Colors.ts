@@ -7,7 +7,7 @@ export type Color =
   | 'background'
   | 'backgroundWithHover'
   | 'border'
-  | 'scrollbarTrack'
+  | 'scrollbarTrackPiece'
   | 'scrollbarThumb';
 
 export type Colors = Record<Color, string>;

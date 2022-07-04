@@ -1,1 +1,1 @@
-export const APP_NAME = 'Github Issues App';
+export const APP_NAME = 'Jokes Searcher';

@@ -1,3 +1,3 @@
-import { exampleHandlers } from './exampleRequest/handlers/exampleHandlers';
+import { jokesHandlers } from './jokesRequest/handlers/jokesHandlers';
 
-export const handlers = [...exampleHandlers];
+export const handlers = [...jokesHandlers];

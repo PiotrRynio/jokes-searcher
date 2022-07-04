@@ -9,23 +9,14 @@ export const FetchingStatus = ({ status }: FetchingStatusProps) => {
   if (status === 'error') {
     return (
       <Wrapper role="status">
-        <Typography variant="body2">Api error...</Typography>
-        <Typography variant="body2">Try again!</Typography>
+        <Typography variant="body1">Api error... Try again!</Typography>
       </Wrapper>
     );
   }
   if (status === 'loading') {
     return (
       <Wrapper role="status">
-        <Typography variant="body2">Loading...</Typography>
-      </Wrapper>
-    );
-  }
-  if (status === 'noResults') {
-    return (
-      <Wrapper role="status">
-        <Typography variant="body2">No results!</Typography>
-        <Typography variant="body2">Search something other</Typography>
+        <Typography variant="body1">Loading...</Typography>
       </Wrapper>
     );
   }

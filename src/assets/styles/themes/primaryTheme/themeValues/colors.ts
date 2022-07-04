@@ -13,6 +13,6 @@ export const colors: Colors = {
 
   border: '#383E54',
 
-  scrollbarTrack: '#FAFAFA',
+  scrollbarTrackPiece: '#FAFAFA',
   scrollbarThumb: '#C1C1C1',
 };

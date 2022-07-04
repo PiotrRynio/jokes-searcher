@@ -6,12 +6,13 @@ type TypographyVariant = 'body1' | 'body2' | 'title';
 type TypographyProps = {
   children: ReactNode;
   variant: TypographyVariant;
+  className?: string;
 };
 
-export const Typography = ({ children, variant }: TypographyProps) => {
-  const TypographyVariant = TYPOGRAPHY_VARIANT_MAP[variant];
+export const Typography = (props: TypographyProps) => {
+  const TypographyVariant = TYPOGRAPHY_VARIANT_MAP[props.variant];
 
-  return <TypographyVariant variant={variant}>{children}</TypographyVariant>;
+  return <TypographyVariant {...props}>{props.children}</TypographyVariant>;
 };
 
 const TYPOGRAPHY_VARIANT_MAP: {
