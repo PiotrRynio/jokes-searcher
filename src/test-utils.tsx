@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import { renderHook, act } from '@testing-library/react-hooks';
 import { Router } from 'react-router-dom';
 import { createMemoryHistory, MemoryHistory } from 'history';
-import { AllAppProviders } from 'providers/AllAppProviders';
+import { AllAppProviders } from 'providers';
 
 type AllTheProvidersProps = { children: ReactNode; history: MemoryHistory };
 

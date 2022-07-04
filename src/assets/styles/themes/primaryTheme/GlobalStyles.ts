@@ -8,7 +8,7 @@ export const GlobalStyles = createGlobalStyle<GlobalStylesProps>`
     padding: 0; 
   } 
   
-  body {
+  body { 
     font-family: ${({ theme }) => theme.fontFamilies.primary};
   }
    
@@ -16,17 +16,17 @@ export const GlobalStyles = createGlobalStyle<GlobalStylesProps>`
     width: 6px;
   }
   ::-webkit-scrollbar-track {
-    border-right: 0  ${({ theme }) => theme.colors.primary} solid;
+    border-right: 0  ${({ theme }) => theme.colors.scrollbarTrack} solid;
   }
   ::-webkit-scrollbar-thumb {
-    background: ${({ theme }) => theme.colors.primary};
-    -webkit-box-shadow: inset 0 0 6px ${({ theme }) => theme.colors.primary};
+    background: ${({ theme }) => theme.colors.scrollbarThumb};
+    -webkit-box-shadow: inset 0 0 6px ${({ theme }) => theme.colors.scrollbarThumb};
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: ${({ theme }) => theme.colors.primary};
-    -webkit-box-shadow: inset 0 0 6px ${({ theme }) => theme.colors.primary};
+    background: ${({ theme }) => theme.colors.scrollbarThumb};
+    -webkit-box-shadow: inset 0 0 6px ${({ theme }) => theme.colors.scrollbarThumb};
   }
-  ::-webkit-scrollbar-thumb:window-inactive {
-    background: ${({ theme }) => theme.colors.primary};
+  ::-webkit-scrollbar-thumb:window-inactive { 
+    background: ${({ theme }) => theme.colors.scrollbarThumb};
   }
 `;

@@ -1,19 +1,17 @@
 import { Colors } from '../../types';
 
 export const colors: Colors = {
-  primary: '#24292F',
+  primaryText: '#FFF',
+  secondaryText: '#95959A',
+  secondaryTextWithHover: '#1E54BA',
 
-  primaryText: '#6F7781',
-  secondaryText: '#24292F',
-  linkText: '#166CD7',
+  searcher: '#1E54BA',
 
-  separatorLine: '#C4C4C4',
-  searcher: '#D0D7DE',
+  background: '#1B1D24',
+  backgroundWithHover: '#242A3D',
 
-  disabled: '#8D959F',
-  background: '#fff',
+  border: '#383E54',
 
-  border: '#C4C4C4',
-
-  transparent: 'transparent',
+  scrollbarTrack: '#FAFAFA',
+  scrollbarThumb: '#C1C1C1',
 };

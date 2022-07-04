@@ -1,4 +1,4 @@
-import { Breakpoints, FontSizes, FontWeights, LineHeights, Sizes } from '../common';
+import { Breakpoints, FontSizes, FontWeights, LineHeights } from '../common';
 import { Colors, FontFamilies, Typographies } from './themeValues';
 import { Mixins } from './mixinsValues';
 
@@ -10,6 +10,5 @@ export interface Theme {
   fontWeights: FontWeights;
   lineHeights: LineHeights;
   mixins: Mixins;
-  sizes: Sizes;
   typographies: Typographies;
 }

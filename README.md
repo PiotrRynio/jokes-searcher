@@ -1,20 +1,18 @@
-# React 17 template + styled-components + useQuery + MSW
+# Jokes Searcher
 
 ## Overview:
 
-Our app should allow searching GitHub for users and repositories.
+A simple React app for searching dad jokes from icanhazdadjoke Api.
 
-- Demo on Netlify: [LINK](https://github.com/PiotrRynio)
-- API URL: [Github REST API(v3)](https://github.com/PiotrRynio)
-- Repo url: [LINK](https://github.com/PiotrRynio)
+- Demo on Netlify: [LINK](https://jokes-searcher.netlify.app)
+- API URL: [Github REST API(v3)](https://icanhazdadjoke.com/api)
+- Repo url: [LINK](https://github.com/PiotrRynio/jokes-searcher)
 -
 
 ### Start:
 
-1. npx npm-check-updates --target minor
-2. npx npm-check-updates -u --target minor
-3. npm install
-4. npm run start
+1. npm install
+2. npm run start
 
 Others:
 
@@ -26,17 +24,9 @@ Others:
 - [css order](https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/)
 - [commit notation](https://gist.github.com/brianclements/841ea7bffdb01346392c#type)
 
-## Problems with initial description of task and solutions:
-
-1. ...
-
-## Authenticating with GitHub Api in the local project:
-
-...
-
 ## Authors:
 
 _Piotr Rynio_  
 Contact:
-pwrynio@gmail.com  
-github.com/PiotrRynio/
+pwrynio@gmail.com
+<br>[github.com/PiotrRynio](https://github.com/PiotrRynio)

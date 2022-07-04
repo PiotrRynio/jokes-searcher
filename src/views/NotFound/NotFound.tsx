@@ -11,11 +11,11 @@ export const NotFound = () => {
 
   return (
     <div>
-      <Typography variant="subtitle" isSecondaryColor>
+      <Typography variant="title" isSecondaryColor>
         PAGE NOT FOUND
       </Typography>
       <Link to="/">
-        <Typography variant="itemTitle">Go to home pages!</Typography>
+        <Typography variant="body1">Go to home pages!</Typography>
       </Link>
     </div>
   );

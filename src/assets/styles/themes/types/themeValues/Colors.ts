@@ -1,13 +1,12 @@
 export type Color =
-  | 'primary'
   | 'primaryText'
   | 'secondaryText'
-  | 'linkText'
-  | 'separatorLine'
+  | 'secondaryTextWithHover'
   | 'searcher'
-  | 'disabled'
   | 'background'
-  | 'transparent'
-  | 'border';
+  | 'backgroundWithHover'
+  | 'border'
+  | 'scrollbarTrack'
+  | 'scrollbarThumb';
 
 export type Colors = Record<Color, string>;

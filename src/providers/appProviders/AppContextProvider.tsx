@@ -1,25 +1,25 @@
 import React, { createContext, useState } from 'react';
 
 type AppContextType = {
-  playerName: string;
-  setPlayerName: (newPlayerName: string) => void;
+  searchedPhrase: string;
+  setSearchedPhrase: (newPlayerName: string) => void;
 };
 
 const appContextDefaultValue = {
-  playerName: '',
-  setPlayerName: () => {},
+  searchedPhrase: '',
+  setSearchedPhrase: () => {},
 };
 
 const AppContext = createContext<AppContextType>(appContextDefaultValue);
 
 const AppContextProvider = ({ children }: { children: React.ReactNode }) => {
-  const [playerName, setPlayerName] = useState<string>(appContextDefaultValue.playerName);
+  const [searchedPhrase, setSearchedPhrase] = useState<string>(appContextDefaultValue.searchedPhrase);
 
   return (
     <AppContext.Provider
       value={{
-        playerName,
-        setPlayerName,
+        searchedPhrase,
+        setSearchedPhrase,
       }}
     >
       {children}
