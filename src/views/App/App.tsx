@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import { NotFound, Searcher } from 'views';
+import { NotFound, Home } from 'views';
 import { MainSection, Wrapper } from './App.styles';
 import { Typography } from '../../components';
 
@@ -11,7 +11,7 @@ export const App = () => {
       </header>
       <MainSection>
         <Routes>
-          <Route path="/" element={<Searcher />} />
+          <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </MainSection>

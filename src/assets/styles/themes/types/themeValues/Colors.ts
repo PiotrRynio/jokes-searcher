@@ -2,6 +2,7 @@ export type Color =
   | 'primaryText'
   | 'secondaryText'
   | 'secondaryTextWithHover'
+  | 'linkText'
   | 'searcher'
   | 'background'
   | 'backgroundWithHover'

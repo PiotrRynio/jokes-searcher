@@ -3,7 +3,7 @@ import { usePageTitle } from 'hooks';
 import { APP_NAME } from 'constants/names';
 import { Typography } from '../../components';
 
-export const Searcher = () => {
+export const Home = () => {
   const { setPageTitle } = usePageTitle();
   useEffect(() => {
     setPageTitle(`Searcher | ${APP_NAME}`);

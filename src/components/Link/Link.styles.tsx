@@ -3,6 +3,6 @@ import styled from 'styled-components';
 
 export const StyledLink = styled(NavLink)`
   text-decoration: none;
-  color: inherit;
+  color: ${({ theme }) => theme.colors.linkText};
   cursor: pointer;
 `;

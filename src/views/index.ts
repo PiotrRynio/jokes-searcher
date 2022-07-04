@@ -1,3 +1,3 @@
 export * from './App';
-export * from './Searcher';
+export * from './Home';
 export * from './NotFound';

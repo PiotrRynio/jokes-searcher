@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { usePageTitle } from 'hooks';
 import { Link, Typography } from 'components';
 import { APP_NAME } from 'constants/names';
+import { Wrapper } from './NotFound.styles';
 
 export const NotFound = () => {
   const { setPageTitle } = usePageTitle();
@@ -10,13 +11,12 @@ export const NotFound = () => {
   }, [setPageTitle]);
 
   return (
-    <div>
-      <Typography variant="title" isSecondaryColor>
-        PAGE NOT FOUND
+    <Wrapper>
+      <Typography variant="title">PAGE NOT FOUND</Typography>
+
+      <Typography variant="body1">
+        <Link to="/">Go to home pages! </Link>
       </Typography>
-      <Link to="/">
-        <Typography variant="body1">Go to home pages!</Typography>
-      </Link>
-    </div>
+    </Wrapper>
   );
 };

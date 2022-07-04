@@ -4,6 +4,7 @@ export const colors: Colors = {
   primaryText: '#FFF',
   secondaryText: '#95959A',
   secondaryTextWithHover: '#1E54BA',
+  linkText: '#1E54BA',
 
   searcher: '#1E54BA',
 

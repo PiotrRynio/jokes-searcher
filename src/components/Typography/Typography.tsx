@@ -1,18 +1,17 @@
 import React, { ReactNode } from 'react';
 import { Body1Typography, Body2Typography, TitleTypography } from './Typography.styles';
-import { TypographyMixinsProps } from 'assets/styles/themes/types/mixinsValues/TypographyMixins';
 
 type TypographyVariant = 'body1' | 'body2' | 'title';
 
 type TypographyProps = {
   children: ReactNode;
   variant: TypographyVariant;
-} & TypographyMixinsProps;
+};
 
-export const Typography = (props: TypographyProps) => {
-  const TypographyVariant = TYPOGRAPHY_VARIANT_MAP[props.variant];
+export const Typography = ({ children, variant }: TypographyProps) => {
+  const TypographyVariant = TYPOGRAPHY_VARIANT_MAP[variant];
 
-  return <TypographyVariant {...props}>{props.children}</TypographyVariant>;
+  return <TypographyVariant variant={variant}>{children}</TypographyVariant>;
 };
 
 const TYPOGRAPHY_VARIANT_MAP: {
