@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { JOKE_ID } from 'constants/urlParameters';
 import { useDebounce, useJokesSearcher } from 'hooks';
@@ -11,6 +11,7 @@ import {
   SearchedJokesListItem,
   StyledTypography,
 } from './Searcher.styles';
+import { Overlay } from '../Overlay/Overlay';
 
 export const Searcher = () => {
   const [, setSearchParams] = useSearchParams();
@@ -26,7 +27,16 @@ export const Searcher = () => {
 
   const searchedJokes = data?.searchedJokes;
   const searchedJokesNumber = searchedJokes?.length || 0;
-  const isSearchedResultsOpened = searchedJokesNumber > 0;
+
+  const [isSearchedResultsOpened, setIsSearchedResultsOpened] = React.useState(false);
+
+  useEffect(() => {
+    if (searchedJokesNumber > 0) {
+      setIsSearchedResultsOpened(true);
+    } else {
+      setIsSearchedResultsOpened(false);
+    }
+  }, [searchedJokesNumber]);
 
   const handleSearcherValueChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
@@ -38,6 +48,12 @@ export const Searcher = () => {
     setSearchParams(params);
   };
 
+  const handleInputClick = () => {
+    if (searchedJokesNumber > 0) {
+      setIsSearchedResultsOpened(true);
+    }
+  };
+
   return (
     <StyledLabel>
       <StyledInput
@@ -46,6 +62,7 @@ export const Searcher = () => {
         value={debouncingValue}
         onChange={handleSearcherValueChange}
         aria-label="searcher"
+        onClick={handleInputClick}
       />
 
       <IconContainer isClickable>
@@ -73,6 +90,12 @@ export const Searcher = () => {
           ))}
         </SearchedJokesList>
       )}
+      <Overlay
+        isOpened={isSearchedResultsOpened}
+        onOverlayClick={() => {
+          setIsSearchedResultsOpened(false);
+        }}
+      />
     </StyledLabel>
   );
 };

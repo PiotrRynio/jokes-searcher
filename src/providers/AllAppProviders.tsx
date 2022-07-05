@@ -15,7 +15,7 @@ export const AllAppProviders = ({ children }: { children: ReactNode }) => {
         <PageTitleProvider>
           <ThemeProvider theme={theme}>
             <Helmet>
-              <meta name="description" content="Github searcher application" />
+              <meta name="description" content="Jokes Searcher" />
               <link rel="stylesheet" href={fontsPaths.primaryFont} />
             </Helmet>
             <GlobalStyles theme={theme} />

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Typography } from '../Typography';
 
 export const StyledLabel = styled.label`
+  z-index: 6;
   position: relative;
 `;
 
