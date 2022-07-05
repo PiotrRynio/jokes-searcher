@@ -10,7 +10,10 @@ type AllTheProvidersProps = { children: ReactNode; history: MemoryHistory };
 const AllTheProviders = ({ children, history }: AllTheProvidersProps) => {
   return (
     <Router location={history.location} navigator={history}>
-      <AllAppProviders> {children}</AllAppProviders>
+      <AllAppProviders>
+        {children}
+        <div id="overlay-root" />
+      </AllAppProviders>
     </Router>
   );
 };
