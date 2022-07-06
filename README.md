@@ -1,7 +1,7 @@
 # Jokes Searcher
 
 - Demo on Netlify: [LINK](https://jokes-searcher.netlify.app)
-- API URL: [Github REST API(v3)](https://icanhazdadjoke.com/api)
+- API URL: [icanhazdadjoke.com](https://icanhazdadjoke.com/api)
 - Repo url: [LINK](https://github.com/PiotrRynio/jokes-searcher)
 
 ## Overview:
